@@ -2,7 +2,7 @@ import { useState, useEffect, useRef, useCallback } from 'react';
 import Stomp from 'stompjs';
 import SockJS from 'sockjs-client/dist/sockjs';
 
-const SOCKET_URL = 'http://localhost:9090/ws';
+const SOCKET_URL = '/ws';
 
 export const useSocket = (roomId, onMoveReceived) => {
     const [connected, setConnected] = useState(false);
